@@ -5,6 +5,9 @@
 ## Konfiguracja
 
 Zainstaluj paczkę "@vitejs/plugin-legacy": "^1.7.1"
+```
+npm i -D @vitejs/plugin-legacy
+```
 
 Wprowadź zmiany w vite.config.ts:
 
