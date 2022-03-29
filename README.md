@@ -1,40 +1,42 @@
-# vue3-vite-polyfill
+# Test Vite + IE11
 
-This template should help get you started developing with Vue 3 in Vite.
+[Dokumentacja: @vitejs/plugin-legacy](https://github.com/search?q=%40vitejs%2Fplugin-legacy&type=code)
 
-## Recommended IDE Setup
+## Konfiguracja
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
+Zainstaluj paczkę "@vitejs/plugin-legacy": "^1.7.1"
 
-## Type Support for `.vue` Imports in TS
+Wprowadź zmiany w vite.config.ts:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+```
+import legacy from "@vitejs/plugin-legacy";
+...
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+export default defineConfig({
+  plugins: [
+    vue(),
+    legacy({
+      targets: ["ie >= 11"],
+      additionalLegacyPolyfills: ["regenerator-runtime/runtime"],
+    }),
+  ],
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+});
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
 ```
 
-### Compile and Hot-Reload for Development
+# Uruchom i sprawdź
 
-```sh
-npm run dev
+Buildujemy wersję
+
 ```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
 npm run build
 ```
+
+Uruchamiamy zbuildowaną wersję:
+
+```
+npm run preview
+```
+
+Sprawdzamy na odpowiedniej przeglądarce
