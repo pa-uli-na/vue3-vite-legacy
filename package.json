@@ -1,5 +1,5 @@
 {
-  "name": "vue3-vite-polyfill",
+  "name": "vue3-vite-legacy",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

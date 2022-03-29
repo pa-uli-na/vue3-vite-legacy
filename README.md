@@ -1,4 +1,4 @@
-# Test Vite + IE11
+# Test Vite + Legacy
 
 [Dokumentacja: @vitejs/plugin-legacy](https://github.com/search?q=%40vitejs%2Fplugin-legacy&type=code)
 
