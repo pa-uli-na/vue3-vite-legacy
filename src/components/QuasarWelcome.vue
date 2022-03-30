@@ -3,7 +3,6 @@
     <q-table
       title="Treats"
       :rows="rows"
-      :columns="columns"
       row-key="name"
       :visible-columns="visibleColumns"
     >
