@@ -8,15 +8,19 @@
     "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@quasar/extras": "^1.13.4",
     "pinia": "^2.0.11",
+    "quasar": "^2.6.2",
     "vue": "^3.2.31",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
+    "@quasar/vite-plugin": "^1.0.7",
     "@types/node": "^16.11.25",
     "@vitejs/plugin-legacy": "^1.7.1",
     "@vitejs/plugin-vue": "^2.2.4",
     "@vue/tsconfig": "^0.1.3",
+    "sass": "^1.32.0",
     "typescript": "~4.5.5",
     "vite": "^2.8.6",
     "vue-tsc": "^0.31.4"
