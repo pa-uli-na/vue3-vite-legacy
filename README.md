@@ -2,7 +2,9 @@
 
 [Dokumentacja: @vitejs/plugin-legacy](https://github.com/search?q=%40vitejs%2Fplugin-legacy&type=code)
 
-Branch [Vite + Legacy + Quasar 2](https://github.com/pa-uli-na/vue3-vite-legacy/tree/vite_vite/plugin-legacy_quasar)
+Branch "master" -> Vite + Vitejs/plugin-legacy
+
+Branch "plugin-legacy_quasar" -> [Vite + Vitejs/plugin-legacy + Quasar 2](https://github.com/pa-uli-na/vue3-vite-legacy/tree/vite_vite/plugin-legacy_quasar)
 
 ## Konfiguracja
 
