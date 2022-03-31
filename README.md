@@ -2,6 +2,8 @@
 
 [Dokumentacja: @vitejs/plugin-legacy](https://github.com/search?q=%40vitejs%2Fplugin-legacy&type=code)
 
+Branch [Vite + Legacy + Quasar 2](https://github.com/pa-uli-na/vue3-vite-legacy/tree/vite_vite/plugin-legacy_quasar)
+
 ## Konfiguracja
 
 Zainstaluj paczkę "@vitejs/plugin-legacy": "^1.7.1"
